@@ -1,0 +1,11 @@
+header #david-browning {
+	font-size: 36px;
+	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2", Georgia, serif;
+	padding-top: 34px;
+}
+header #hi-im {
+	left: 140px;
+}
+nav #menu li .subheader {
+	margin: 0;
+}

@@ -1,0 +1,90 @@
+$background_color: #c64444
+$text_color: #000
+$link_color: #fff
+
+html, body
+	font-family: "ff-providence-web-pro-1","ff-providence-web-pro-2", Georgia, serif
+	font-size: 22px
+	color: $text_color
+	background: $background_color url(../images/texture.jpg) repeat 50% 0
+
+body
+	width: 800px
+	margin: 0 auto
+
+a,a:visited
+	color: $link_color
+	text-decoration: underline
+	text-shadow: 0 -1px 1px #000
+
+.light
+	color: #fff
+	text-shadow: 0 1px 1px #000
+.caps
+	text-transform: uppercase
+	font-weight: 900
+	font-size: 1.3em
+.indented
+	padding-left: 40px
+.spaced
+	display: block
+	float: left
+	width: 120px
+.invisible
+	visibility: hidden
+
+header
+	#logo
+		width: 163px
+		height: 245px
+		background: transparent url(../images/logo.png) no-repeat
+		margin: 20px auto 30px
+	#register-button
+		display: block
+		width: 150px
+		text-align: center
+		font-size: 1.2em
+		padding: 10px 30px
+		background: #fff url(../images/diagStripeBG.png) repeat
+		text-transform: uppercase
+		text-decoration: none
+		text-shadow: none
+		color: #000
+		margin: 0 auto 30px
+		-webkit-box-shadow: 1px 1px 2px #000
+		-moz-box-shadow: 1px 1px 2px #000
+		box-shadow: 1px 1px 2px #000
+		-webkit-border-radius: 4px
+		-moz-border-radius: 4px
+		border-radius: 4px
+	#register-button:active
+		-webkit-box-shadow: none
+		-moz-box-shadow: none
+		box-shadow: none
+
+section
+	margin: 10px 0 0
+	padding: 85px 0 0
+
+.slogan
+	text-align: center
+	margin-top: 0
+	background: transparent url(../images/lines1.png) no-repeat 50% 0
+	font-size: 1.1em
+.details
+	background: transparent url(../images/lines2.png) no-repeat 50% 0
+.sponsors
+	background: transparent url(../images/lines3.png) no-repeat 50% 0
+.agenda
+	background: transparent url(../images/lines4.png) no-repeat 50% 0
+	ul
+		margin: 20px 0
+		.time
+			display: block
+			float: left
+			width: 120px
+	a
+		color: #000
+		text-shadow: none
+	a:hover
+		color: #fff

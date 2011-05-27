@@ -1,0 +1,44 @@
+!!!
+%html{html_attrs('en')}
+  / Designed and built by David Browning of Two Guys, LLC
+  / All content & design copyright 2011 Ruby DCamp
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %meta{ :name => "Description", "http-equiv" => "Description", :content => "A free event to code, share, learn, and improve Ruby." }
+    %meta{ :name => "Keywords", "http-equiv" => "Keywords", :content => "ruby, dcamp, code, share, learn, dc, open space, unconference" }
+    %meta{ :content => "Ruby DCamp", :property => "og:title" }
+    %meta{ :content => "Ruby DCamp", :property => "og:site_name" }
+    %meta{ :content => "sleight42@gmail.com,evanlight", :property => "fb:admin" }
+    %title Ruby DCamp
+    
+    %link{ :id => 'favicon', :href => '/images/favicon.png', :rel => 'icon', :type => 'image/x-icon' }
+    %link{ :href => '/stylesheets/reset.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
+    %link{ :href => '/stylesheets/styles.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
+    
+    / [if lt IE 9]
+      %script{ :src => "http://html5shiv.googlecode.com/svn/trunk/html5.js", :type => "text/javascript" }
+    / [if lt IE 8]
+      %link{ :href => '/stylesheets/ie.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
+    
+    %script{ :src => "http://use.typekit.com/xgc4okb.js", :type => "text/javascript" }
+    :javascript
+      try{Typekit.load();}catch(e){}
+    
+  %body
+    
+    %header
+      #logo
+      %a{:href => "http://eventbrite.com", :id => "register-button"} register
+      
+    = yield
+        
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16715533-1']);
+      _gaq.push(['_trackPageview']);
+  
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
