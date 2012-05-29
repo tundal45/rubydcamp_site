@@ -10,35 +10,35 @@
     %meta{ :content => "Ruby DCamp", :property => "og:site_name" }
     %meta{ :content => "sleight42@gmail.com,evanlight", :property => "fb:admin" }
     %title Ruby DCamp
-    
+
     %link{ :id => 'favicon', :href => '/images/favicon.png', :rel => 'icon', :type => 'image/x-icon' }
     %link{ :href => '/stylesheets/reset.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
     %link{ :href => '/stylesheets/styles.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
-    
+
     / [if lt IE 9]
       %script{ :src => "http://html5shiv.googlecode.com/svn/trunk/html5.js", :type => "text/javascript" }
     / [if lt IE 8]
       %link{ :href => '/stylesheets/ie.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
-    
+
     %script{ :src => "http://use.typekit.com/xgc4okb.js", :type => "text/javascript" }
     :javascript
       try{Typekit.load();}catch(e){}
-    
+
   %body
-    
+
     %header
       #logo
-      %a{:href => "http://www.eventbrite.com/event/1782644939", :id => "register-button"} register
-      
+      %a{:href => "http://www.eventbrite.com/event/3640139756", :id => "register-button"} register
+
     = yield
-        
+
     %footer
-    
+
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-23626319-1']);
       _gaq.push(['_trackPageview']);
-  
+
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
